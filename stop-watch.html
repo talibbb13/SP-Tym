@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="stop-watch.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <li><a href="/">Date & Time</a></li>
+      <li><a href="stop-watch.html">Stopwatch</a></li>
+      <li><a href="loading-animation.html">Loading Animation</a></li>
+    </nav>
+    <div class="search">
+      <input type="search" name="search" id="search" placeholder="🔎 Search here">
+      <button>Search</button>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <div class="circle" id="timerCircle">
+        <span id="seconds">00:</span><span id="mili-seconds">00</span>
+      </div>
+      <div class="buttons">
+        <button id="startStop" onclick="startStopWatch()">Start</button>
+        <button id="reset" onclick="resetWatch()" disabled>Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="stop-watch.js"></script>
+</body>
+</html>
